@@ -12,7 +12,13 @@ let mark=30;
 let result= mark>=40?'pass':'fail'
 console.log(result);
 console.log(18^8)
- function subtract(a,b){
-    console.log(a-b)
+ function add(a,b){
+    console.log(a+b)
  }
- subtract(3333,111)
+ 
+ const sub=(a,b)=>{console.log(a-b)}
+const mul=(a,b)=>{console.log(a*b)}
+const calc=(a,b,fun)=>{
+    fun(a,b)
+}
+calc(4,3,add)
